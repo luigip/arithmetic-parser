@@ -1,4 +1,10 @@
 bin/
 .settings/
 .cache
-
+*.iml
+*.ipr
+*.iws
+.idea
+out
+target
+*.class
