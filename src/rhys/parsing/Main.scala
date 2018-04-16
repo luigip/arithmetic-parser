@@ -1,6 +1,6 @@
 package rhys.parsing
 
-object Main extends Arith with App {
+object Main extends ArithExprParser with App {
   
   val input = "2 * (3 + (7 * 4 - 1)) / 2 - 1"
 

@@ -1,8 +1,8 @@
 package rhys.parsing
 import scala.util.parsing.combinator.JavaTokenParsers
 
-class Arith extends JavaTokenParsers {
-  // test update
+class ArithExprParser extends JavaTokenParsers {
+
   type D = Double
   
   def expr:   Parser[D]    = term ~ rep(plus | minus)     ^^ {case a~b => (a /: b)((acc,f) => f(acc))} 
